@@ -31,7 +31,7 @@
 
 #define CHERTEC_POINTS(dat, sz) ((Chertec_Points) {.data = (dat), .size = (sz)})
 #define CHERTEC_DECIMAL(ma, ex) ((Chertec_Decimal) {.mant = (ma), .exp = (ex)})
-#define CHERTEC_SET_FORMAT(dest, format) strncpy((dest), (format), (32)) 
+#define CHERTEC_SET_FORMAT(dest, format) strncpy((dest), (format), (CHERTEC_FORMAT_STRING_SIZE)) 
 
 typedef double Chertec_Real;
 
